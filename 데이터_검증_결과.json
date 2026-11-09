@@ -1,0 +1,19 @@
+{
+  "nodes": 53,
+  "records": 52,
+  "sources": 28,
+  "source_date_mismatch_count": 0,
+  "unused_sources": [],
+  "shared_url_source_groups": [
+    [
+      "S015",
+      "S016"
+    ]
+  ],
+  "replacement_character_count": 0,
+  "sha256": {
+    "기관_목록.csv": "5781f0b2c46153a3256fc201b731fc21bad56a9ef23c478c290adb0cee48d026",
+    "검증된_기관쌍_협력관계.csv": "1c4b18b006a9434543ada3b5593284dd70c36ed600084b5ef6fa6558b04f5811",
+    "협력관계_출처.csv": "4e2394ccce059319b79caccb5cabba8fbd331b040de7cb38e2ac9c720b779c17"
+  }
+}
