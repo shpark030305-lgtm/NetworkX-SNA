@@ -1,0 +1,92 @@
+{
+  "nodes": 56,
+  "records": 58,
+  "sources": 32,
+  "source_date_mismatch_count": 1,
+  "source_date_mismatches": [
+    {
+      "relation_id": "R053",
+      "source_id": "S029",
+      "relation_date": "2026-10-07",
+      "source_date": "2026-10-08"
+    }
+  ],
+  "unused_sources": [],
+  "shared_url_source_groups": [
+    [
+      "S015",
+      "S016"
+    ]
+  ],
+  "replacement_character_count": 0,
+  "sha256": {
+    "기관_목록.csv": "6ab76cecad667e2bf4371305dae05dca8acccacc8e5eb956caab70c4ef16ff1f",
+    "검증된_기관쌍_협력관계.csv": "6019aafe0062b8ac652b622def95ff2745038c34ad9505efb7128cf698a95419",
+    "협력관계_출처.csv": "b8149afc9c8929c3ec6ac0b2c99e9a732b771526ff8ed8754739dccdbc318f14"
+  },
+  "jackknife": {
+    "method": "leave_one_source_url_group_out",
+    "source_groups": 31,
+    "software_versions": {
+      "networkx": "3.5",
+      "pandas": "2.3.3",
+      "numpy": "2.3.2",
+      "igraph": "1.0.0"
+    },
+    "source_group_ids": [
+      "S001",
+      "S002",
+      "S003",
+      "S004",
+      "S005",
+      "S006",
+      "S007",
+      "S008",
+      "S009",
+      "S010",
+      "S011",
+      "S012",
+      "S013",
+      "S014",
+      "S015;S016",
+      "S017",
+      "S018",
+      "S019",
+      "S020",
+      "S021",
+      "S022",
+      "S023",
+      "S024",
+      "S025",
+      "S026",
+      "S027",
+      "S028",
+      "S029",
+      "S030",
+      "S031",
+      "S032"
+    ],
+    "periods": [
+      "pre",
+      "during",
+      "all"
+    ],
+    "replicates_per_period": 31,
+    "effective_removal_replicates": {
+      "pre": 8,
+      "during": 23,
+      "all": 31
+    },
+    "fixed_master_nodes": 56,
+    "walktrap_steps": 4,
+    "ari_universe": "baseline-active nodes; newly isolated nodes get distinct singleton labels",
+    "rank_method": "descending average ties across all master nodes",
+    "scope": "baseline evidence levels 2+3; no population confidence intervals or causal inference",
+    "url_rule": "strip whitespace/fragment and lowercase scheme/host; retain path/query; no inferred syndication grouping",
+    "minimum_ari": {
+      "pre": 0.8066298342541437,
+      "during": 0.7187256514587481,
+      "all": 0.7950292815312098
+    }
+  }
+}
