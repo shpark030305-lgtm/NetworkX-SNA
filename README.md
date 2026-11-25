@@ -92,15 +92,18 @@ DARPA형 자율적 컨소시엄 구성 아래에서 독파모 참여기관들이
 
 ### 선정 이전
 
-![선정 이전 협력망](output/선정_이전_협력망.png)
+<img width="4800" height="2550" alt="선정_이전_협력망" src="https://github.com/user-attachments/assets/aca029b3-d7f5-48c9-9211-08568759a63a" />
+
 
 ### 선정 이후
 
-![선정 이후 협력망](output/선정_이후_협력망.png)
+<img width="4800" height="2550" alt="선정_이후_협력망" src="https://github.com/user-attachments/assets/60ad1eb9-9a84-44cb-b382-de83f9534ec5" />
+
 
 ### 전체 기간
 
-![전체 기간 협력망](output/전체_기간_협력망.png)
+<img width="4800" height="2550" alt="전체_기간_협력망" src="https://github.com/user-attachments/assets/2c2efa20-d2ef-4710-9ca0-6209f0be1f9c" />
+
 
 ## Walktrap 군집화
 
@@ -116,7 +119,8 @@ DARPA형 자율적 컨소시엄 구성 아래에서 독파모 참여기관들이
 
 이 그림의 색은 팀 소속이 아닌 **탐지된 군집**을 의미합니다. 점선 경계와 옅은 배경은 군집을 나타내는 시각적 주석이며 협력 edge가 아닙니다. 일부 경계 영역은 겹칠 수 있으나 중복 군집 소속을 뜻하지 않습니다.
 
-![Walktrap 군집화](output/전체_기간_Walktrap_군집화.png)
+<img width="4800" height="2550" alt="전체_기간_Walktrap_군집화" src="https://github.com/user-attachments/assets/b936658d-0140-4ba3-bcb3-680381064044" />
+
 
 ## 잭나이프 안정성 분석
 
@@ -139,7 +143,8 @@ DARPA형 자율적 컨소시엄 구성 아래에서 독파모 참여기관들이
 
 이 분석의 최솟값–최댓값은 **관측 출처 제거에 대한 민감도 범위이며 모집단 신뢰구간이 아닙니다.**
 
-![잭나이프 안정성](output/잭나이프_안정성.png)
+<img width="4500" height="3000" alt="잭나이프_안정성" src="https://github.com/user-attachments/assets/53ab1ae9-5e31-43b5-ab01-ac443ba0deea" />
+
 
 ## 실행 방법
 
@@ -186,33 +191,6 @@ python "기관쌍_협력망_분석.py" --data-dir data --output-dir output
 | `잭나이프_안정성.png` | 출처 영향, 군집 일치도, 주요 기관 중심성 범위 |
 
 모든 산출물은 `output/`에 저장됩니다. PNG는 Matplotlib으로 생성하며 300dpi로 저장합니다.
-
-## 향후 역량 분석 연계
-
-R 텍스트 분석 결과를 결합할 수 있도록 다음 7개 역량 컬럼을 제공합니다.
-
-```text
-cap_infra_compute
-cap_data
-cap_model_pretraining
-cap_posttraining_alignment
-cap_reasoning_safety_eval
-cap_deployment_optimization
-cap_application_service
-```
-
-현재 값은 모두 빈칸이며 임의 점수를 생성하지 않습니다. 연구자가 공통 척도로 값을 채운 뒤 명시적으로 입력 파일을 지정했을 때만 다음을 계산합니다.
-
-- Cosine similarity
-- Dominant capability
-- 기존 협력 edge의 cross-capability linkage
-- Team capability coverage
-
-```bash
-python "기관쌍_협력망_분석.py" --capability-profile filled_capabilities.csv
-```
-
-역량 유사도는 기관의 속성 비교이며 새로운 협력 edge로 전환하지 않습니다.
 
 ## 해석상의 한계
 
